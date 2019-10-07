@@ -1,7 +1,5 @@
 <template>
   <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>-->
     <el-container class="home-bg">
       <el-col :span="10">
         <div class="space-bg"></div>
@@ -16,6 +14,7 @@
           <div class="space-working"></div>
           <Working/>
         </el-row>
+          <router-link to="/debug">debug</router-link>
         <el-footer>
           <div class="space-footer"></div>
           <el-divider></el-divider>
