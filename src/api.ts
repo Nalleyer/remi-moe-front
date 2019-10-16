@@ -1,3 +1,4 @@
+import { Vue } from 'vue-property-decorator'
 const enum EType {
     GET,
     POST,
@@ -37,4 +38,8 @@ function runApi(key: string, body: any, options: any): Promise<any> {
             return (Vue as any).http.delete(api.url, body, options)
             break
     }
+}
+
+export {
+    runApi,
 }

@@ -6,7 +6,12 @@ import {RemiState, Game, Games} from '@/store/type'
 Vue.use(Vuex)
 
 const state: RemiState = {
-  games: [],
+  games: [{
+    id: 1,
+    title: '测试游戏',
+    link: 'tmp',
+    crateTime: new Date(),
+  }],
 }
 
 const mutations = {
